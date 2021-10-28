@@ -1,0 +1,52 @@
+.list-content {
+  background-color: orange;
+  width: 50%;
+  overflow-y: auto;
+}
+.image-list {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+
+.detail-content {
+  background-color: yellow;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-content img {
+  width: 300px;
+  height: 300px;
+}
+
+.header {
+  width: 100vw;
+  height: 80px;
+  background-color: lightgray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.footer {
+  width: 100vw;
+  height: 80px;
+  color: white;
+  background-color: lightgray;
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-btn {
+  position: absolute;
+  left: calc(100vw / 5);
+}
