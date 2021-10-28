@@ -8,9 +8,9 @@ const ImageList = () => {
   const { data: imgs } = useSelector(e => e.imgReducer)
 
   const selImg = (data) => {
-    console.log(data)
     dispatch(selectImg(data))
   }
+
   return (
     <div className="list-content">
       {imgs.map((img, idx) => {

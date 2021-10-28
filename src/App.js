@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { setImgs } from './redux/image/image.action';
 import './App.css';
@@ -10,15 +11,13 @@ import Footer from './components/footer';
 function App() {
   const dispatch = useDispatch()
 
-  const getImg = () => {
+  useEffect(() => {
     let images = []
     for (let i = 0; i < 10; i++) {
       images.push({ url: `https://picsum.photos/${i + 100}`, title: `name_${i + 10}` })
     }
     dispatch(setImgs(images))
-  }
-
-  getImg()
+  }, [])
 
   return (
     <div className="App">

@@ -9,7 +9,6 @@ const ImageDetail = () => {
     dispatch(selectImg({}))
   }
 
-  console.log(selImg)
   return (
     <div className="detail-content">
       {selImg.url ? (
